@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07/13 | Exercise1</title>
+    
+<!--Internal CSS-->
+    <style>
+.header {
+    text-align: center;
+}
+
+/*DIV Container*/
+.container {
+    display: flex;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top: 150px;
+}
+
+/* DIV Column */
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+/* TABLE */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.participants {
+    color: blue;
+    text-align: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*End of Internal CSS */
+    </style>
+
+</head>
+<body>
+
+    <!--Header-->
+    <div class="header">
+        <h1>Exercise 1</h1>
+        <h3>July 13, 2021</h3>        
+    </div>
+
+    <!--DIV Container-->
+    <div class="container">
+        <!--Left Table-->
+        <div class="column">
+          <table>
+              <tr>
+              <th class="participants" colspan="4">Name of Male Participants</th>
+              </tr>
+            <tr>
+              <th>First Name</th>
+              <th>Middle Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+            </tr>
+
+            <tr>
+              <td>Juan</td>
+              <td>Santos</td>
+              <td>Dela Cruz</td>
+              <td>20</td>
+            </tr>
+
+            <tr>
+              <td>Jose</td>
+              <td>Salazar</td>
+              <td>Reyes</td>
+              <td>25</td>
+            </tr>
+
+            <tr>
+              <td>Luis</td>
+              <td>Rizal</td>
+              <td>Bonifacio</td>
+              <td>21</td>
+            </tr>
+          </table>
+        <!--End of Left column-->
+        </div>
+
+
+        <!-- Right Table-->
+        <div class="column">
+          <table>
+              <tr>
+              <th class="participants" colspan="4">Name of Female Participant</th>
+              </tr>
+
+            <tr>
+              <th>First Name</th>
+              <th>Middle Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+            </tr>
+
+            <tr>
+              <td>Eva</td>
+              <td>Roa</td>
+              <td>Luna</td>
+              <td>23</td>
+            </tr>
+
+            <tr>
+              <td>Lulu</td>
+              <td>Sy</td>
+              <td>Tang</td>
+              <td>18</td>
+            </tr>
+
+            <tr>
+              <td>Lena</td>
+              <td>Aquino</td>
+              <td>Santos</td>
+              <td>30</td>
+            </tr>
+          </table>
+        <!--End of Right Column-->
+        </div>
+      <!--End of DIV Container-->
+      </div>
+
+
+
+
+      
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          width:40%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        #t01 tr:nth-child(even) {
+          background-color: #eee;
+        }
+        #t01 tr:nth-child(odd) {
+         background-color: #fff;
+        }
+        #t01 th {
+          background-color: gray;
+          color: white;
+        }
+        #t02 tr:nth-child(even) {
+          background-color: #eee;
+        }
+        #t02 tr:nth-child(odd) {
+         background-color: #fff;
+        }
+        #t02 th {
+          background-color: gray;
+          color: white;
+        }
+        input {
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <center><h1>Registration Form</h1></center>
+    <table>
+        <form action="#">
+        <tr id="t01">
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+
+        </tr>
+        
+        <tr>
+            <td><center><input type="text" name="fname" placeholder="First Name"></center></td>
+            <td><center><input type="text" name="mname" placeholder="Middle Name"></center></td>
+            <td><center><input type="text" name="lname" placeholder="Last Name"></center></td>
+            <td><textarea name="" id="" cols="30" rows="2" placeholder="Address"></textarea></td>
+
+        </tr>
+       
+    </table>
+
+    <table>
+    <tr id="t02">
+        <th>Gender</th>
+        <th>Career Path</th>
+        <th>Technical Skills</th>
+    </tr>
+    <tr>
+        <td><center><input type="radio"><label for="Male" style="padding-right:50px;">Male</label>
+        <input type="radio"><label for="Male">Female</label></center></td>
+        <td>
+        <center>
+        <select name="career" id="career" style="padding: 5px 5px;">
+        <option value="frontend">Front-End Developer</option>
+        <option value="backend">Back-End Developer</option>
+        <option value="fullstack">Full-Stack Developer</option>
+        </select></center>
+        </td>
+        <td>           
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="HTML"> HTML</label>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="CSS"> CSS</label>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+        <label for="Javascript"> Javascript</label>
+        <input type="checkbox" id="mysql" name="mysql" value="mysql">
+        <label for="MySQL"> MySQL</label><br>
+        <input type="checkbox" id="php" name="php" value="php">
+        <label for="PHP"> PHP</label>
+        <input type="checkbox" id="laravel" name="laravel" value="laravel">
+        <label for="Laravel"> Laravel</label> 
+        <input type="checkbox" id="react" name="react" value="react">
+        <label for="React"> React.JS</label>   
+        </td>
+    </tr>
+    </table>
+    <center>
+        <input type="submit" style="margin-top:5px"> 
+    </center> 
+    </form>
+</body>
+</html>

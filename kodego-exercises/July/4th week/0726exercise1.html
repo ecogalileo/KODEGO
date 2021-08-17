@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0726 Exercise1</title>
+</head>
+<style>
+    .calculator{
+        font-size: 10rem;
+        text-align: center;
+        display: block;
+        margin-top:20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border: 3px solid #000000;
+    }
+</style>
+<body>
+
+        <script type="text/javascript">
+        const num1 = parseInt(prompt("Enter first number: "));
+        const operator = prompt("Please Enter operator \n+\n-\n*\n/");
+        const num2 = parseInt(prompt("Enter second number: "));
+        let result;
+
+        if (operator == '+') {
+            result = num1 + num2;
+        }
+        else if (operator == '-') {
+            result = num1 - num2;
+        }
+        else if (operator == '*') {
+            result = num1 * num2;
+        }
+        else if(operator == '/') {
+            result = num1 / num2;
+        }
+        else {
+            alert("Invalid syntax!");
+            result = "Invalid syntax!";
+        }
+
+        document.write(`<strong class="calculator">${num1} ${operator} ${num2} = ${result}</strong>`);
+    </script>
+
+</body>
+</html>

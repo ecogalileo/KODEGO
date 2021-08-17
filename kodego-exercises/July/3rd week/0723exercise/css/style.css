@@ -1,0 +1,64 @@
+* {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section {
+  background-color: lightgreen;
+  font-size: 5rem;
+  height: 70vh;
+  width: 65%;
+  text-align: center;
+  margin-left: 1%;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  margin-right: 1%;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-size: 5rem;
+  text-align: center;
+  height: 69vh;
+}
+
+.container {
+  clear: both;
+  overflow: auto;
+  background-color: #242222;
+  color: white;
+}
+
+nav {
+  float: right;
+}
+
+.logo img {
+  float: left;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-family: raleway;
+  margin-right: 50px;
+}
+
+ul li:hover {
+  color: orange;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-right: 1%;
+  border: 2px solid lightsalmon;
+  background-color: #00c261;
+  width: 98%;
+  padding-left: 1%;
+  font-size: 2rem;
+  margin-right: 1%;
+}

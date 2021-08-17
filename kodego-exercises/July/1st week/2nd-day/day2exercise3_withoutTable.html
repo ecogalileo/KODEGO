@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+        html, body {
+        display: flex;
+        justify-content: center;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 15px;
+        }
+        form {
+        border: 5px solid #f1f1f1;
+        }
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 16px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        }
+        .icon {
+        font-size: 110px;
+        display: flex;
+        justify-content: center;
+        color: #4286f4;
+        }
+        button {
+        background-color: #4286f4;
+        color: white;
+        padding: 14px 0;
+        margin: 10px 0;
+        border: none;
+        cursor: grab;
+        width: 48%;
+        }
+        h1 {
+        text-align:center;
+        font-size:18;
+        }
+        button:hover {
+        opacity: 0.8;
+        }
+        .formcontainer {
+        text-align: center;
+        margin: 24px 50px 12px;
+        }
+        .container {
+        padding: 16px 0;
+        text-align:left;
+        }
+        span.psw {
+        float: right;
+        padding-top: 5;
+        padding-right: 15px;
+        }
+
+      </style>
+</head>
+<body>
+  
+    <form action="#" style="margin-top: 200px; padding-top: 50px;">
+        <div class="icon">
+        <i class="fa fa-user-circle"></i>
+      </div>
+
+      <div class="formcontainer">
+      <div class="container">
+        <label for="fname"><strong>First Name</strong></label>
+        <input type="text" placeholder="Enter First Name" name="fname" required>
+        <label for="mname"><strong>Middle Name</strong></label>
+        <input type="text" placeholder="Enter Middle Name name="mname" required>
+        <label for="lname"><strong>Last Name</strong></label>
+        <input type="password" placeholder="Enter Last Name" name="lname" required>
+      </div>
+
+      <div>
+      <div><label for="address" style="margin-left: -740px;"><strong>Address</strong></label></div>
+      <textarea name="address" id="address" cols="50" rows="5" style="margin-left: -435px;" placeholder="Address"></textarea>
+      </div>
+      <br>
+
+      <div style="margin-left: -760px;"><strong>Gender</strong></div>
+      <div style="margin-left: -750px;">
+        <input type="radio" name="gender" value="male" >
+        <label for="gender">Male</label><br>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" value="male">
+        <label for="gender">Female</label>
+      </div>
+        <br>
+        
+        <label for="career" style="margin-left: -720px;"><b>Career Path:&nbsp;</b></label><br>
+      <div>
+        <select name="career" id="career" style="margin-left: -650px; padding: 5px 5px;">
+         <option value="frontend">Front-End Developer</option>
+         <option value="backend">Back-End Developer</option>
+         <option value="fullstack">Full-Stack Developer</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <table>
+          <div style="margin-left: -700px;"><strong>Technical Skills</strong></div>
+          <tr>
+
+          <td>
+          <input type="checkbox" id="html" name="html" value="html">
+          <label for="HTML"> HTML</label>
+          </td>
+
+          <td>
+          <input type="checkbox" id="css" name="css" value="css">
+          <label for="CSS"> CSS</label>
+          </td>
+
+          <td> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="javascript" name="javascript" value="javascript">
+          <label for="Javascript"> Javascript</label>
+          </td>
+          </tr>
+
+          <tr>
+          <td>
+          &nbsp;&nbsp;<input type="checkbox" id="mysql" name="mysql" value="mysql">
+          <label for="MySQL"> MySQL</label>
+          </td>
+
+          <td>
+          &nbsp;<input type="checkbox" id="php" name="php" value="php">
+          <label for="PHP"> PHP</label></td>
+          <td>
+
+          <input type="checkbox" id="laravel" name="laravel" value="laravel">
+          <label for="Laravel"> Laravel</label>  
+          </td>
+          </tr>
+
+          <tr>
+          <td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="react" name="react" value="react">
+          <label for="React"> React.JS</label>    
+          </td>
+          </tr>
+
+        </table>
+      </div>
+
+      <button type="submit"><strong>SUBMIT</strong></button>
+    </form>
+
+</body>
+</html>

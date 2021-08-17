@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    header, footer {
+        font-size: 3vh;
+        background-color: lightgreen;
+        text-align: center;
+        height: 20vh;
+    }
+
+    h1 {
+        padding-top: 4vh;
+    }
+    .container {
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    aside, nav, article {
+      padding: 30px;
+        font-size: 3vh;
+    }
+    .container > nav, .container> aside {
+        background-color: beige;
+        flex:1;
+    }
+    .container > nav {
+        order: 1;
+        background-color: rgb(204, 230, 236);
+    }
+    .container > nav > a {
+        text-decoration: none;
+        color: black;
+        display: inherit;
+        padding: 7.5vh;
+    }
+    .container > article {
+        flex: 4;
+        flex-basis: 0 1 30%;
+    }
+    .myForm {
+    background-color: beige;
+    padding: 1vh;
+  }
+  .row {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+  }
+  .column {
+    padding: 3vh;
+  }
+
+  .input-group {
+   	display: flex;
+  }
+  .input-group > label {
+    margin-right: 1vh; 
+    padding: .5vh 0;
+    font-size: 3vh;
+  }
+  .myForm input,
+  .myForm select {
+    flex: 6; 
+    padding: .5vh;
+    margin-bottom: 1vh;
+  }
+  .myForm button {
+   padding: 1vh; 
+    background: gray;
+    color: white;
+    border: 0;
+  }
+  .myForm fieldset {
+   	border: 0; 
+  }
+  .taxi > label,
+  .extras > label {
+    display: block;
+  }
+
+    
+    @media screen and (max-width: 600px) {
+        .container
+        {
+            flex-direction: column;
+        }
+
+        header, footer {
+        height: auto;
+        width: 100%;
+        }
+        .input-group, [type=submit] {
+        width: 100%;
+        margin-top: 0;
+  }
+    }
+</style>
+<body>
+    <!-- Header -->
+    <header><h1>Header</h1></header>
+    <div class="container">
+
+        <!-- Article -->
+    <article>
+        <h1>article</h1>
+        <form class="myForm">
+            <div class="row">
+              <div class="column">
+                <div class="input-group">
+                  <label for="customer_name">Name </label>
+                  <input id="customer_name">
+                </div>
+                <div class="input-group">
+                  <label for="phone_number">Phone </label>
+                  <input type="tel" id="phone_number">
+                </div>
+                <div class="input-group">
+                  <label for="email_address">Email </label>
+                  <input type="email" id="email_address">
+                </div>
+                <div class="input-group">
+                  <label for="pickup_time">Pickup Date/Time</label>
+                  <input type="datetime-local" id="pickup_time">
+                </div>
+                <div class="input-group">
+                  <label for="pickup_place">Pickup Place</label>
+                  <select id="pickup_place">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="dropoff_place">Dropoff Place</label>
+                  <input type="text" id="dropoff_place" list="destinations">
+                  <datalist id="destinations">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                  </datalist>
+                </div>
+              </div>
+
+              <div class="column">
+                <fieldset class="taxi">
+                  <legend>Which vehicle do you require?</legend>
+                  <label> <input type="radio" id="car" value="car"> Car </label>
+                  <label> <input type="radio" id="jeep" value="jeepney"> Jeepney </label>
+                  <label> <input type="radio" id="trike" value="tricycle"> Tricycle </label>
+                </fieldset><br>
+                <fieldset class="extras">
+                  <legend>Extras</legend>
+                  <label> <input type="checkbox" id="baby" value="baby"> Baby Seat </label>
+                  <label> <input type="checkbox" id="wheelchair" value="wheelchair"> Wheelchair Access </label>
+                  <label> <input type="checkbox" id="tip" value="tip"> Stock Tip </label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <button id="submit">Submit Booking</button>
+            </div>
+          </form>
+    <!-- End of Article -->
+    </article>
+
+    <!-- Aside -->
+    <aside><h1>Aside</h1></aside>
+
+    <!-- Navigation-->
+    <nav><h1>Navigation</h1></nav>
+
+    <!-- End of container -->
+    </div>
+
+    <footer><h1>Footer</h1></footer>
+</body>
+</html>

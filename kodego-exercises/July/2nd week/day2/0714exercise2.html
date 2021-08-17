@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0714 | Exercise 1</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    body {
+        margin: 0px;
+        text-align: center;
+    }
+    header, footer {
+        height: 20vh;
+        background-color: yellowgreen;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    article {
+        flex: 8;
+        background-color: white;
+    }
+    aside {
+        background-color: beige;
+    }
+    nav {
+        background-color: rgb(182, 210, 211);
+    }
+
+    
+    @media screen and (max-width:657px) {
+        .container
+        {
+            flex-direction: column;
+        }
+    }
+    </style>
+<body>
+    
+        <header><h1>HEADER</h1></header>
+        <div class="container">
+            <!--<nav>
+                
+                <a href="#">Home</a>
+                
+                <a href="#">About Us</a>
+                
+                <a href="#">Contact Us</a>
+            </nav>
+            <article>
+                <h2>Article</h2>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+            </article>
+            <aside>
+                <h2>Aside</h2>
+                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+            </aside> -->
+
+            <div class="container">
+            <article>
+                <h1>Article</h1>
+            </article>
+
+            <aside>Aside</aside>
+
+            <nav>Nav</nav>
+        </div>
+        
+
+        <footer><h1>Footer</h1></footer>
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0713 | Exercise 3</title>
+</head>
+<style>
+    /* Universal Selector */
+    *{
+    box-sizing:border-box;
+    padding: auto;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    /* This is the header */
+    .header{
+        text-align: center;
+        background-color: black;
+        color: white;
+        border: 5px solid green;
+        border-radius: 25px;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    /* This is the container */
+    .container{
+        display:flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .picture-box:hover {
+        background-color: green;
+    }
+
+    /* This is the picture-box*/
+    .picture-box{
+        width:33%;
+        padding:15px;
+        border:1px solid green;
+        cursor: pointer;
+    }
+
+    /* This is the image */
+    img{
+        height: auto;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* This is the content letter */
+    h1 {
+        font-size: 2vw;;
+    }
+
+    p {
+        font-size: 1vw;
+    }
+
+    @media screen and (max-width: 992px) {
+    body {
+    background-color: black;
+    }
+
+    .header {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+}
+
+</style>
+<body>
+    
+    <!--Header-->
+    <div class="header">
+        <h1>Image Gallery</h1>       
+    </div>
+    
+    <!--Container-->
+    <div class="container">
+        
+        <!-- This is the Pictures box-->
+        <div class="picture-box">
+            <img src="img/1.jfif" alt="picture" class="center">
+            <h1>Picture1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna eros, mattis ac augue a, elementum fermentum ex.
+                Phasellus ut leo eu turpis ullamcorper imperdiet. Etiam sit amet tincidunt lacus.
+                Pellentesque ut efficitur libero. Vivamus eget sodales diam, quis pulvinar sapien. 
+        </div>
+        <div class="picture-box">
+            <img src="img/2.jfif" alt="picture">
+            <h1>Picture2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna eros, mattis ac augue a, elementum fermentum ex.
+                Phasellus ut leo eu turpis ullamcorper imperdiet. Etiam sit amet tincidunt lacus.
+                Pellentesque ut efficitur libero. Vivamus eget sodales diam, quis pulvinar sapien. 
+        </div>
+        <div class="picture-box">
+            <img src="img/3.jfif" alt="picture">
+            <h1>Picture3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna eros, mattis ac augue a, elementum fermentum ex.
+                Phasellus ut leo eu turpis ullamcorper imperdiet. Etiam sit amet tincidunt lacus.
+                Pellentesque ut efficitur libero. Vivamus eget sodales diam, quis pulvinar sapien. 
+        </div>
+        <div class="picture-box">
+        <img src="img/4.jfif" alt="picture">
+            <h1>Picture4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam urna eros, mattis ac augue a, elementum fermentum ex.
+                Phasellus ut leo eu turpis ullamcorper imperdiet. Etiam sit amet tincidunt lacus.
+                Pellentesque ut efficitur libero. Vivamus eget sodales diam, quis pulvinar sapien. 
+        </div>
+
+    <!-- End of Container -->
+    </div>
+
+</body>
+</html>
